@@ -17,9 +17,9 @@ void loop() {
       Serial.println(RPM); //Prints the RPM needed
   }
 
-  PORTB = 000011; // sets pin 8 and 9 HIGH
+  PORTB = B000011; // sets pin 8 and 9 HIGH
   delayMicroseconds(T); //The part of theperiod that pin 8 its High
-  PORTB = 000010; //sets pin 9high and pin 8 LOW 
+  PORTB = B000010; //sets pin 9high and pin 8 LOW 
   delayMicroseconds(T);//The part of theperiod that pin 8 its Low
   
 }
